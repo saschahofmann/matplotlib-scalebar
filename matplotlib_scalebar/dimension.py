@@ -79,7 +79,7 @@ class SILengthDimension(_Dimension):
         for prefix, factor in _PREFIXES_FACTORS.items():
             latexrepr = None
             if prefix == u'\u00b5' or prefix == 'u':
-                latexrepr = '$\\mu$m'
+                latexrepr = '$\\mu m$'
             self.add_units(prefix + 'm', factor, latexrepr)
 
 class SILengthReciprocalDimension(_Dimension):
